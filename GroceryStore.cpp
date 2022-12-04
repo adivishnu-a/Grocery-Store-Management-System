@@ -132,16 +132,10 @@ class amount:public staff, public product
     		    if(ch==1)
                 {
     		        get();
-    			    ofstream x("group6.txt");
-     			    x<<profit;
-     			    x.close();
     		    }
     		    else if(ch==2)
                 {
     			    getstaff();
-    			    ofstream x("group6.txt");
-     			    x<<profit;
-     			    x.close();
     		    }
     		    else if(ch==3)
     			    break;
