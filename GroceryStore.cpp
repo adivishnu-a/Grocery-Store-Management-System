@@ -84,7 +84,7 @@ class staff:public virtual Profit{
     public:
         void cal()
         {
-		    profit=(profit-(salary*empquan)/30);
+		    profit=(profit-salary*empquan);
         }
         void file()
         {
@@ -191,7 +191,7 @@ class Records:public staff, public product
             {								
     	        cout<<"\t\t\tEmployee ID not found\n";
 	        }
-	        cout<<"Update Employee Name : ";
+	        cout<<"\t\t\tUpdate Employee Name : ";
   	        cin>>post;
   	        fout<< "\n\t\t\tNumber of working employees: "<<empquan<< "\n\t\t\tEmployee Salary: "<<salary<< "\n\t\t\tEmployee Name :"<<post<<"\n\t\t\tEmployee ID: "<<empid;
  	        fout.close();
@@ -282,9 +282,6 @@ void start()
 
 int main(){
     int ch;
-    char  username[20];
-    char password[20];
-    char pwd[20];
     while(1)
     {
         system("cls");
