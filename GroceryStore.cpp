@@ -78,7 +78,7 @@ class product:public virtual Profit{
 class staff:public virtual Profit{
     protected:
         double salary;
-        char post[12];
+        char post[10];
         char empid[10];
         int empquan;
     public:
@@ -117,7 +117,7 @@ class staff:public virtual Profit{
         }
 };
 
-class amount:public staff, public product
+class Records:public staff, public product
 {
     public:
         void add()
@@ -211,13 +211,13 @@ void start()
         cin>>u;
         if(u==1)
         {
-            amount a;
+            Records a;
             a.show();
             a.add();
         }
         else if(u==2)
         {
-            amount d;
+            Records d;
             d.show();
         }
         else if(u==3)
@@ -264,12 +264,12 @@ void start()
         }
         else if(u==5)
         {
-            amount u;
+            Records u;
             u.update_item();
         }
         else if(u==6)
         {
-            amount v;
+            Records v;
             v.update_emp();
         }
         else if(u==7)
