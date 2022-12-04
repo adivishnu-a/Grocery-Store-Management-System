@@ -37,7 +37,7 @@ class product:public virtual Profit{
 		{
 		    cost=percost*quan;
             sell=persell*quan;
-            profit=profit+(sell-cost)*30;
+            profit=profit+(sell-cost);
 		}
         void file()
         {
@@ -67,7 +67,7 @@ class product:public virtual Profit{
                 cin>>percost;
                 cout<<"\t\t\tEnter selling price of product : ";
                 cin>>persell; 
-                cout<<"\t\t\tTotal product quantity : ";
+                cout<<"\t\t\tTotal products sold quantity : ";
                 cin>>quan;
                 cal();
                 file();
@@ -84,7 +84,7 @@ class staff:public virtual Profit{
     public:
         void cal()
         {
-		    profit=(profit-salary*empquan);
+		    profit=(profit-(salary*empquan)/30);
         }
         void file()
         {
@@ -92,8 +92,11 @@ class staff:public virtual Profit{
             strcpy(file,empid);
             strcat(file,".txt");
             ofstream f(file);
-            f<< "\t\t\t\nNumber of working employees : "<<empquan<< "\n\t\t\tEmployee Salary : "<<salary<< "\n\t\t\tEmployee Name : "<<post<<"\n\t\t\tEmployee ID : "<<empid<<endl;
+            f<< "\n\t\t\tNumber of working employees : "<<empquan<< "\n\t\t\tEmployee Salary : "<<salary<< "\n\t\t\tEmployee Name : "<<post<<"\n\t\t\tEmployee ID : "<<empid<<endl;
             f.close();
+            ofstream p("Profits.txt");
+            p<<profit;
+            p.close();
         }
         void getstaff()
         {
@@ -103,6 +106,7 @@ class staff:public virtual Profit{
             cin>>empquan;
             for(int i=0;i<empquan;i++)
             {
+                cout<<endl;
   	            cout<<"\t\t\tEnter Employee name : ";
   	            cin>>post;
                 cout<<"\t\t\tEnter Employee ID : ";
@@ -170,7 +174,7 @@ class amount:public staff, public product
   	            cin>>percost;
  	            cout<<"\t\t\tUpdate Selling Price per product : ";
   	            cin>>persell;
- 	            cout<<"\t\t\tUpdate total product quantity : ";
+ 	            cout<<"\t\t\tUpdate total products sold quantity : ";
  	            cin>>quan;
                 cost=percost*quan;
                 sell=persell*quan;
