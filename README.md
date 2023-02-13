@@ -35,7 +35,7 @@ Go to the project directory
 Run the program
 
 ```bash
-  g++ -o GroceryStoreMgmt GroceryStoreMgmt.cpp&GroceryStoreMgmt.exe
+  g++ -o GroceryStore GroceryStore.cpp&GroceryStore.exe
 ```
 
 
