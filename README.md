@@ -43,7 +43,7 @@ Run the program
 
 #### Are changes required in any part of the code?
 
-No, the code is system and platform independent, so changes in the .cpp script are not required. Just make sure you have the GCC/G++ compiler, and run the program
+No, the code is system and platform independent, so changes in the .cpp script are not required, however, you may need to change the clear screen commands from "cls" to "clear" if you are running this on a Linux machine. Just make sure you have the GCC/G++ compiler, and run the program.
 
 #### How is the data stored for multiple executions?
 The program creates .txt files to store the information of various products, and the detils of employees, each record entity having it's own seperate file.
