@@ -34,9 +34,17 @@ Go to the project directory
 
 Run the program
 
+Windows:
+
 ```bash
   g++ -o GroceryStore GroceryStore.cpp
   ./GroceryStore
+```
+
+Linux & macOS:
+```bash
+  g++ GroceryStore.cpp
+  ./a.out
 ```
 
 
