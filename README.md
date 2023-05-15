@@ -1,61 +1,72 @@
-
 # Grocery Store Management System
 
-An inventory management application developed using C++.
-Done as part of the Semester 3 "Object Oriented Programming with C++" Course at SRM University, AP
+Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Data Storage](#data-storage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
+
+This is a Grocery Store Management System, a C++ application developed as part of the "Object Oriented Programming with C++" course at SRM University, AP. It provides functionality for managing a grocery store's inventory, calculating costs, profits, and salaries.
 
 ## Features
 
-We have designed the project in a way that it can manage a Grocery Store’s Revenue, and calculate their costs, profits, salaries.
+The Grocery Store Management System offers the following features:
 
-This application allows the user to:
-- Add, Store and Update Product Details
-- Add, Store and Update Employee Details
-- Calculate the daily profit by finding the profit from sales, and subtracting the employee’s daily wage
-- Use file handling to store the profits and products for next days
+- Add, store, and update product details
+- Add, store, and update employee details
+- Calculate daily profit by calculating the profit from sales and subtracting employee wages
+- Use file handling to store profits and products for future reference
 
-Show some love by starring the repo ⭐
+Show some ❤️ by starring the repository! ⭐️
+## Getting Started
 
-## Run Locally
+To run the program locally, follow these steps:
 
+1. Clone the project:
 
-Clone the project
+   ```shell
+   git clone https://github.com/adivishnu-a/Grocery-Store-Management-System
+   ```
 
-```bash
-  git clone https://github.com/adivishnu-a/Grocery-Store-Management-System
-```
+2. Navigate to the project directory:
 
-Go to the project directory
+   ```shell
+   cd Grocery-Store-Management-System
+   ```
 
-```bash
-  cd Grocery-Store-Management-System
-```
+3. Compile and run the program:
 
-Run the program
+   - On Windows:
 
-Windows:
+     ```shell
+     g++ -o GroceryStore GroceryStore.cpp
+     ./GroceryStore
+     ```
 
-```bash
-  g++ -o GroceryStore GroceryStore.cpp
-  ./GroceryStore
-```
+   - On Linux & macOS:
 
-Linux & macOS:
-```bash
-  g++ GroceryStore.cpp
-  ./a.out
-```
+     ```shell
+     g++ GroceryStore.cpp
+     ./a.out
+     ```
 
+## Usage
 
-## FAQ
+Upon running the program, you will be presented with a menu where you can choose various options, including adding entries, displaying profits, searching product details, searching employee details, and modifying product/employee details. Follow the prompts and enter the required information to perform the desired actions.
 
-#### Are changes required in any part of the code?
+## Data Storage
 
-No, the code is system and platform independent, so changes in the .cpp script are not required, however, you may need to change the clear screen commands from "cls" to "clear" if you are running this on a Linux machine. Just make sure you have the GCC/G++ compiler, and run the program.
+The program utilizes file handling to store information. It creates separate `.txt` files for each product and employee entry. These files contain the details of the respective entities and are automatically created during program execution. You don't need to pre-load any `.txt` files as the program handles their creation and management.
 
-#### How is the data stored for multiple executions?
-The program creates .txt files to store the information of various products, and the detils of employees, each record entity having it's own seperate file.
+## Contributing
 
-#### So, do I need to have the .txt files pre-loaded for the program to run smoothly?
-Though the program can also use any existing .txt files during it's execution, it can run without any existing .txt files. The program automatically creates .txt files for each entry added during execution, so that they can be used for the successive runs. So you don't have to presave any .txt files.
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
