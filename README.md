@@ -15,7 +15,7 @@ This application allows the user to:
 - Calculate the daily profit by finding the profit from sales, and subtracting the employee’s daily wage
 - Use file handling to store the profits and products for next days
 
-
+Show some love by starring the repo ⭐
 
 ## Run Locally
 
